@@ -1,38 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Employee Payroll Form</title>
-    <link rel="stylesheet" href="../css/Form.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap">
-    <script type="text/JavaScript" src="../js/From Validation.js"></script>
-    <script type="text/JavaScript" src="../js/EmployeePayrollData.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet" >
+    <link href="../css/Form.css" rel="stylesheet">
+    <title>Employee Payroll App</title>
 </head>
-
 <body>
-    <!-- UC1 Header with logo-->
     <header class="header-content header">
         <div class="logo-content">
-            <img src="../assets/images/logo.png" alt="">
+            <img src = "../assets/images/logo.png" alt="">
             <div>
-                <span class="emp-text">Employee</span>
-                <span class="emp-text emp-payroll">PAYROLL</span>
+                <span class="Employee-text">EMPLOYEE</span>
+                <span class="Employee-text Employee-payroll">PAYROLL</span>
             </div>
+
         </div>
+
     </header>
-    <div id="formId" class="form-content">
-        <form class="form" action="#" onreset="resetform();" onsubmit="save();"> 
-            <!---UC2-->
-            <div class="form-head">
-                Employee Payroll form
+    <div class="from-content">
+        <form class="from" action="#">
+            <div class="from-head">Employee Payroll form</div>
+            <div class="row-content">
+                <label class="label text" for="name">
+                    Name
+                </label>
+                <input class="input" type="text" id="name" name="name" placeholder="Your name" required/>
             </div>
             <div class="row-content">
-                <label class="label text" for="name">Name</label>
-                <input class="input" type="text" id="name" name="name" placeholder="Your name.." required>
-                <error-output class="text-error" for="text"></error-output>
+                <label class="label text" for="profile">Profile image</label>
+                <div class="profile-radio-content">
+                    <label>
+                        <input type="radio" id="profile1" name="profile" value="../assets/profile-images/Ellipse-3.png" required>
+                        <img class="profile" id='image1' src="../assets/profile-images/Ellipse -3.png">
+                    </label>
+                    <label>
+                        <input type="radio" id="profile2" name="profile" value="../assets/profile-images/Ellipse-1.png" required>
+                        <img class="profile" id='image1' src="../assets/profile-images/Ellipse -1.png">
+                    </label>
+                    <label>
+                        <input type="radio" id="profile3" name="profile" value="../assets/profile-images/Ellipse-8.png" required>
+                        <img class="profile" id='image1' src="../assets/profile-images/Ellipse -8.png">
+                    </label>
+                    <label>
+                        <input type="radio" id="profile4" name="profile" value="../assets/profile-images/Ellipse-7.png" required>
+                        <img class="profile" id='image1' src="../assets/profile-images/Ellipse -7.png">
+                    </label>
+                </div>
+        
             </div>
         </form>
     </div>
+   
+</body>
+</html>
